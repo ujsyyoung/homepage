@@ -1,0 +1,75 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" slick-uniqueid="3">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="keywords" content="padding, interpolation, 3d, sparse convolution"> 
+<meta name="description" content="Interpolation-Aware Padding for 3D Sparse Convolutional Neural Networks">
+<link rel="stylesheet" href="../css/jemdoc.css" type="text/css">
+<style type="text/css">
+</style>
+<title>Interpolation-Aware Padding</title>
+</head>
+
+<body>
+<div id="layout-content" style="margin-top:25px">
+
+<!-- teaser -->
+<table border="0" width="100%"> <tbody>
+<tr>
+  <td valign="top" align="center">
+    <b><font size="5" face="Times New Roman" >Interpolation-Aware Padding for 3D Sparse Convolutional Neural Networks</font></b>
+    <br><br>
+  </td>
+</tr>
+
+<tr>
+  <td valign="top" align="center">
+    <font size="4" face="Times New Roman" > <a href="https://yukichiii.github.io/"  target="_blank">Yu-Qi Yang</a> </font> <font size="2"><sup>12</sup></font> &emsp;&emsp;
+    <font size="4" face="Times New Roman" > <a href="https://wang-ps.github.io/"  target="_blank">Peng-Shuai Wang</a> </font> <font size="2"><sup>2</sup></font> &emsp;&emsp;
+    <font size="4" face="Times New Roman" > <a href="https://xueyuhanlang.github.io/"  target="_blank">Yang Liu</a> </font> <font size="2"><sup>2</sup></font>
+    <br> 
+    <font size="2"> <sup>1</sup></font> <font size="3" face="Times New Roman" > <a href="https://www.tsinghua.edu.cn/" target="_blank">Tsinghua University</a></font>
+    &emsp;&emsp;
+    <font size="2"> <sup>2</sup></font> <font size="3" face="Times New Roman" ><a href="http://research.microsoft.com/en-us/labs/asia/" target="_blank">Microsoft Research Asia</a> </font>
+    &emsp;&emsp;
+    <br>
+    <font size="3" face="Times New Roman" > ICCV 2021 </font>
+    <br> <br>
+  </td>
+</tr>
+
+<tr>
+  <td valign="top" align="center">
+      <img width="95%" src="./padding.png">
+  </td>
+</tr>
+</tbody> </table>
+
+<!-- Abstract -->
+<table border="0" width="100%"> <tbody>
+<h2>Abstract</h2>
+<tr>
+  <p style="text-align:justify;">
+  <font face="Times New Roman" >
+    Sparse voxel-based 3D convolutional neural networks (CNNs) are widely used for various 3D vision tasks. Sparse voxel-based 3D CNNs create sparse non-empty voxels from the 3D input and perform 3D convolution operations on them only. We propose a simple yet effective padding scheme --- interpolation-aware padding to pad a few empty voxels adjacent to the non-empty voxels and involve them in the 3D CNN computation so that all neighboring voxels exist when computing point-wise features via the trilinear interpolation. For fine-grained 3D vision tasks where point-wise features are essential, like semantic segmentation and 3D detection, our network achieves higher prediction accuracy than the existing networks using the nearest neighbor interpolation or the normalized trilinear interpolation with the zero-padding or the octree-padding scheme. Through extensive comparisons on various 3D segmentation and detection tasks, we demonstrate the superiority of 3D sparse CNNs with our padding scheme in conjunction with feature interpolation.
+  </font>
+  </p>
+</tr>
+
+<tr>
+  <td align="center" width="25%">
+    <img src="firstpage.png" width="150">
+  </td>
+  <td>
+    <strong>Paper</strong> [<a href="https://openaccess.thecvf.com/content/ICCV2021/papers/Yang_Interpolation-Aware_Padding_for_3D_Sparse_Convolutional_Neural_Networks_ICCV_2021_paper.pdf" target="_blank">PDF</a>] <br><br>
+    <strong>Appendix</strong> [<a href="https://openaccess.thecvf.com/content/ICCV2021/supplemental/Yang_Interpolation-Aware_Padding_for_ICCV_2021_supplemental.pdf" target="_blank">PDF</a>] <br><br>
+    <strong>Video</strong> [<a href="https://www.youtube.com/watch?v=BNycRxakUlk" target="_blank">YouTube</a>] <br><br>
+    <strong>Code</strong> [<a href="https://github.com/Yukichiii/SparsePadding" target="_blank">Github</a>] <br><br>
+  </td>
+</tr>
+</tbody> </table>
+
+</div>
+</body>
+</html>
